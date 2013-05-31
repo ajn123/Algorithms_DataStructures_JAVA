@@ -19,7 +19,7 @@ public class BinarySearchTree {
 		this.root = null;
 	}
 
-	private Node<Integer> insert(Node<Integer> tree, int element) {
+	public Node<Integer> insert(Node<Integer> tree, int element) {
 		if (root == null) {
 			root = tree;
 		}
@@ -38,7 +38,7 @@ public class BinarySearchTree {
 
 	}
 
-	private Node find(Node<Integer> tree, int element) {
+	public Node find(Node<Integer> tree, int element) {
 
 		if (tree == null) {
 			return null;
@@ -52,7 +52,7 @@ public class BinarySearchTree {
 
 	}
 
-	private void delete(Node<Integer> tree, int element) {
+	public void delete(Node<Integer> tree, int element) {
 		if (find(tree, element) == null) {
 			return;
 		} else {
